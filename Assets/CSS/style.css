@@ -1,0 +1,33 @@
+main {
+  background-color: hsl(171, 100%, 41%);
+}
+
+.currentTitle{
+  font-size: xx-large;
+}
+
+.currentContent {
+  font-size: large;
+}
+
+.fiveDayContainer {
+  display: flex;
+}
+
+.green{
+  background-color: green;
+  width: auto;
+  border-radius: 20%;
+}
+
+.yellow{
+  background-color: yellow;
+  width: auto;
+  border-radius: 20%;
+}
+
+.red{
+  background-color: red;
+  width: auto;
+  border-radius: 20%;
+}

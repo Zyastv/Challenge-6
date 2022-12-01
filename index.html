@@ -4,22 +4,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="./Assets/CSS/reset.css"/>
+  <title>Weather Dashboard</title>
   <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
   <header>
-
-  </header>>
+    <nav class="level notification is-primary">
+      <div class="level-left">
+        <div class="level-item">
+          <p class="subtitle is-5">
+            <strong>Weather</strong> Dashboard
+          </p>
+        </div>
+        <div class="level-item">
+          <div class="field has-addons">
+            <p class="control">
+              <input value="Las Vegas" id="cityName" class="input" type="text" >
+            </p>
+            <p class="control">
+              <button id="searchBtn" class="button">
+                Search
+              </button>
+            </p>
+          </div>
+        </div>
+        <span id="error"></span>
+      </div>
+      <div class="level-right dropdown is-active">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Previous Searches</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div id="searchedCities" class="dropdown-content"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
+    <section>
+      <row class="container is-fluid">
+        <div id="currentContainer" class="level notification is-primary">
+          
+        </div>
+      </row>
+      <row class="container">
+        <div id="fiveDayContainer" class="fiveDayContainer notification is-primary">
+
+        </div>
+      </row>
+    </section>
 
 
-
-    <script src="./assets/js/script.js"></script>
+    
   </main>
-  <footer>
-
-  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
